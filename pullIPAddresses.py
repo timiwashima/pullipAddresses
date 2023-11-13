@@ -7,7 +7,7 @@ Created on Mon Nov 13 08:42:05 2023
 
 import re
 
-importList='C:\\users\\tiwashima\\downloads\\IPs.txt'
+importList='C:\\directory\\to\\inputFile.txt'
 file=open(importList)
 data=file.read()
 print('Opened: ' + importList + '.')
@@ -22,7 +22,7 @@ print('Closed: ' + importList + '.\n')
 #dataIPAddresses=re.search(r'[\d]+.[\d]+.[\d]+.[\d]+', testString)
 #print(dataIPAddresses)
 
-outputFile=('C:\\users\\tiwashima\\downloads\\ipAddresses.txt')
+outputFile=('C:\\directory\\to\\outputFile.txt')
 ipList=open(outputFile,'a')
 dataIPAddresses=re.findall(r'[\d]+.[\d]+.[\d]+.[\d]+', data)
 for ipAddress in dataIPAddresses:
